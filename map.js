@@ -1,7 +1,6 @@
 
 (() => {
 
-
     mapboxgl.accessToken = 'pk.eyJ1IjoiYnJvYnNvbiIsImEiOiJjbDYyMzFrcXMyMzE4M2VucTRwM2lrcDg1In0.pOyITTHCVFYuVOulg045vA';
     window.map = new mapboxgl.Map({
         container: 'map-box',
