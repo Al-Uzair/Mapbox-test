@@ -2,7 +2,7 @@
 (() => {
 
 
-    mapboxgl.accessToken = 'sk.eyJ1IjoiZWNvdGVzdGVyIiwiYSI6ImNsb2h1aDNvbzFiM2sya28xaW1zdWZwYTIifQ.QFNpNt1SJaGTOFO4Y_DwVQ';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJvYnNvbiIsImEiOiJjbDYyMzFrcXMyMzE4M2VucTRwM2lrcDg1In0.pOyITTHCVFYuVOulg045vA';
     window.map = new mapboxgl.Map({
         container: 'map-box',
         style: 'mapbox://styles/brobson/cl46rzjp7000c15mh2qw6oyhq',
