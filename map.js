@@ -211,8 +211,13 @@ if (!features.length) {
 }
 
 function mouseMove(e) {
-var features = map.queryRenderedFeatures(e.point, {
-    layers: ['clusters', 'unclustered-point']
-});
-map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-}
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['clusters', 'unclustered-point']
+        });
+
+        if (features.length) {
+            map.getCanvas().style.cursor = 'pointer'; // Change cursor to pointer if there are features under the cursor
+        } else {
+            map.getCanvas().style.cursor = 'grab'; // Show grab cursor if no features are under the cursor
+        }
+    }
